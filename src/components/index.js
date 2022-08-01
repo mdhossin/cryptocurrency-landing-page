@@ -8,7 +8,7 @@ export { default as FeaturesSectionThree } from "./FeaturesSectionThree";
 export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";
 export { default as Hero } from "./Hero";
-export { default as NavBar } from "./NavBar";
+export { default as NavItems } from "./NavItems";
 export { default as NavMobile } from "./NavMobile";
 export { default as NewsLetter } from "./NewsLetter";
 export { default as NewsLetterForm } from "./NewsLetterForm";

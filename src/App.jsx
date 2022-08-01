@@ -5,9 +5,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-  // mobile nav state
-  const [navMobile, setNavMobile] = useState(false);
-
   // aos init
   useEffect(() => {
     Aos.init({
@@ -17,8 +14,7 @@ function App() {
   });
   return (
     <div className="overflow-hidden">
-      <Header setNavMobile={setNavMobile} />
-
+      <Header />
       <Hero />
     </div>
   );
