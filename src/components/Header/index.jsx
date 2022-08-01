@@ -10,12 +10,7 @@ const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
 
   return (
-    <header
-      className="py-[30px] lg:pt-[30px]"
-      data-aos="fade-down"
-      data-aos-delay="900"
-      data-aos-duration="2000"
-    >
+    <header className="py-[30px] lg:pt-[30px]">
       <div className="container mx-auto flex items-center justify-between">
         {/* nav logo */}
 

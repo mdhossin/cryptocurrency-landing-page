@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Header, Hero, Stats, Why } from "./components";
+import { Calculate, Header, Hero, Stats, Why } from "./components";
 // import aos
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +20,7 @@ function App() {
       <Stats />
 
       <Why />
+      <Calculate />
     </div>
   );
 }
