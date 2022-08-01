@@ -7,6 +7,8 @@ import {
   Why,
   Trade,
   Features,
+  NewsLetter,
+  Footer,
 } from "./components";
 // import aos
 import Aos from "aos";
@@ -32,8 +34,8 @@ function App() {
       <Trade />
 
       <Features />
-      {/* <Newsletter />
-      <Footer /> */}
+      <NewsLetter />
+      <Footer />
     </div>
   );
 }
