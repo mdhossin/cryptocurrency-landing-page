@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* The base layer is for things like reset rules or default styles applied to plain HTML elements.
+The components layer is for class-based styles that you want to be able to override with utilities.
+The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
+
+/* If you want to add your own default base styles for specific HTML elements, use the @layer directive to add those styles to Tailwind’s base layer: */
+
+/* ami jokhon nijer style add korbo tokhon @layer er maddhome add korte parbo */
+
+/* @layer base{
+h1{
+  @alyer text-white; evabe class add more dite pari
+} */
+
+@layer base {
+  body {
+    @apply font-primary bg-darkblue text-white leading-normal;
+  }
+  .h3 {
+    @apply text-[22px] lg:text-[32px] font-bold;
+  }
+  .btn {
+    @apply bg-blue h-[60px] px-4 rounded-full hover:bg-blue-hover transition flex items-center text-lg font-medium outline-none;
+  }
+  .section {
+    @apply py-12 lg:py-24;
+  }
+  .section-title {
+    @apply text-2xl lg:text-[40px] font-bold leading-normal mb-6;
+  }
+  .section-subtitle {
+    @apply mt-6 mb-8 text-gray;
+  }
+  .input,
+  .select {
+    @apply outline-none w-full border-b border-gray text-darkblue h-[38px] text-xl;
+  }
+  .input {
+    @apply lg:max-w-[410px] bg-transparent;
+  }
+  .select {
+    @apply lg:max-w-[200px] cursor-pointer;
+  }
+}
