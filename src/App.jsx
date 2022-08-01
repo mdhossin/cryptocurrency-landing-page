@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
-import { Calculate, Header, Hero, Stats, Why, Trade } from "./components";
+import {
+  Calculate,
+  Header,
+  Hero,
+  Stats,
+  Why,
+  Trade,
+  Features,
+} from "./components";
 // import aos
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -22,6 +30,10 @@ function App() {
       <Why />
       <Calculate />
       <Trade />
+
+      <Features />
+      {/* <Newsletter />
+      <Footer /> */}
     </div>
   );
 }
