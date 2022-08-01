@@ -1,5 +1,5 @@
-import BitCoin from "./img/bitcoin.png";
-import BitCon from "./img/bitcon.png";
+import BitCoinImg from "./img/bitcoin.png";
+import BitConImg from "./img/bitcon.png";
 import Ethereum from "./img/ethereum.png";
 import FeatureOne from "./img/feature-1-img.png";
 import FeatureTwo from "./img/feature-2-img.png";
@@ -21,9 +21,9 @@ import WhyModelOne from "./img/why-model-1.png";
 import WhyModelTwo from "./img/why-model-2.png";
 import WhyRibbon from "./img/why-ribbon.png";
 
-export default {
-  BitCoin,
-  BitCon,
+export {
+  BitCoinImg,
+  BitConImg,
   Ethereum,
   FeatureOne,
   FeatureTwo,
