@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Header, Hero } from "./components";
+import { Header, Hero, Stats, Why } from "./components";
 // import aos
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,6 +16,10 @@ function App() {
     <div className="overflow-hidden">
       <Header />
       <Hero />
+
+      <Stats />
+
+      <Why />
     </div>
   );
 }
