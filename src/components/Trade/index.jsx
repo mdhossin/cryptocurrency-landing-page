@@ -1,7 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
+
+// import icons
+import { IoIosArrowForward } from "react-icons/io";
+import { currency } from "../../data";
 
 const Trade = () => {
-  return <div>trade</div>;
+  const [itemName, setItemName] = useState("Bitcoin");
+  return (
+    <section className="section'">
+      <div className="container mx-auto">
+        <h2
+          className="section-title text-center mb-16"
+          data-aos="fade-up"
+          data-aos-offset="400"
+        >
+          Trade securely and market the high growth cryptocurrencies.
+        </h2>
+        {/* items */}
+
+        <div
+          className="flex flex-col gap-[45px] lg:flex-row"
+          data-aos="fade-up"
+          data-aos-offset="450"
+        >
+          {currency.map(({ image, name, abbr, description }, index) => (
+            <div
+              onClick={() => setItemName(name)}
+              key={index}
+              className={`${
+                name === itemName ? "bg-violet text-white" : "bg-white"
+              } w-full rounded-2xl py-12 px-6 shadow-primary cursor-pointer transition duration-300`}
+            >
+              <div className="flex flex-col justify-center items-center">
+                {/* item image */}
+
+                <img className="mb-12" src={image} alt="" />
+
+                {/* item name */}
+
+                <div className="mb-4 flex items-center gap-x-2">
+                  <div
+                    className={`${
+                      name === itemName
+                        ? "text-[32px] font-bold text-[#ffffff]"
+                        : "text-[32px] font-bold text-[#0D0D2B]"
+                    }`}
+                  >
+                    {name}
+                  </div>
+
+                  <div className="text-lg text-gray-400 font-medium">
+                    {abbr}
+                  </div>
+                </div>
+                {/* item description */}
+                <p
+                  className={`${
+                    name === itemName
+                      ? "mb-6 text-center text-[#ffffff]"
+                      : "mb-6 text-center text-[#828282]"
+                  }`}
+                >
+                  {description}
+                </p>
+
+                {/* btn */}
+                <button
+                  className={`${
+                    name === itemName
+                      ? "text-white bg-blue hover:bg-blue-hover border-none pl-8 pr-6 gap-x-3"
+                      : "text-blue w-16"
+                  }  border-2 border-gray-300 rounded-full h-16 flex justify-center items-center`}
+                >
+                  {name === itemName && (
+                    <div className="text-lg font-medium">Start mining</div>
+                  )}
+                  <IoIosArrowForward
+                    className={`${name === itemName ? "text-2xl" : "text-3xl"}`}
+                  />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Trade;
